@@ -4,19 +4,15 @@ BEGIN TRANSACTION;
 -- *************************************************************************************************
 -- Drop all db objects in the proper order
 -- *************************************************************************************************
-<<<<<<< HEAD
 DROP TABLE IF EXISTS planets;
 DROP TABLE IF EXISTS solar_systems;
-=======
 
->>>>>>> b0a9b0301d52252622a314b520944e7f62086c61
 DROP TABLE IF EXISTS users;
 
 -- *************************************************************************************************
 -- Create the tables and constraints
 -- *************************************************************************************************
 
-<<<<<<< HEAD
 -- users (pluralized because 'user' is a reserved word)
 CREATE TABLE users (
     user_id SERIAL,
@@ -70,7 +66,6 @@ INSERT INTO planets (name, description, solar_system_id)
 VALUES
     ('Earth', 'Our Planet!', 1),
     ('Jupiter', 'The Gas Giant with the Big Red Spot!', 1);
-=======
 --users (name is pluralized because 'user' is a SQL keyword)
 CREATE TABLE users (
 	user_id SERIAL,
@@ -109,6 +104,5 @@ CREATE TABLE IF NOT EXISTS planets
 )
 INSERT INTO planets(planet_id, name, description, solar_system_id)
 	VALUES (1, 'Earth', 'Our Planet!', 1), (2, 'Jupiter', The Gas Giant with the Big Red Spot!, 1);
->>>>>>> b0a9b0301d52252622a314b520944e7f62086c61
 
 COMMIT TRANSACTION;

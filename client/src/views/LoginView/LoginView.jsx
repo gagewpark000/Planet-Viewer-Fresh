@@ -51,47 +51,45 @@ export default function LoginView() {
   return (
     <div className={styles.loginPage}>
       <div className={styles.centerContent}>
-<<<<<<< HEAD
-      
-=======
-      <>
->>>>>>> b0a9b0301d52252622a314b520944e7f62086c61
-        <h1>Please Sign In</h1>
 
-        <Notification notification={notification} clearNotification={() => setNotification(null)} />
 
-        <form onSubmit={handleSubmit}>
-          <div className={styles.loginForm}>
-            <label htmlFor="username">Username</label>
-            <input
-              type="text"
-              placeholder="Username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              required
-              autoFocus
-            />
-            <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-            <div className={styles.buttonContainer}>
-              <button type="submit" className={styles.signInBtn}>Sign in</button>
+
+        <>
+
+          <h1>Please Sign In</h1>
+
+          <Notification notification={notification} clearNotification={() => setNotification(null)} />
+
+          <form onSubmit={handleSubmit}>
+            <div className={styles.loginForm}>
+              <label htmlFor="username">Username</label>
+              <input
+                type="text"
+                placeholder="Username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                required
+                autoFocus
+              />
+              <label htmlFor="password">Password</label>
+              <input
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+              <div className={styles.buttonContainer}>
+                <button type="submit" className={styles.signInBtn}>Sign in</button>
+              </div>
             </div>
-          </div>
-        </form>
-        <hr />
-        Need an account? <Link to="/register" className={styles.register}>Register!</Link>
-<<<<<<< HEAD
-    
-=======
+          </form>
+          <hr />
+          Need an account? <Link to="/register" className={styles.register}>Register!</Link>
+
       </>
->>>>>>> b0a9b0301d52252622a314b520944e7f62086c61
-    </div>
-    </div>
+
+    </div >
+    </div >
   );
 }
