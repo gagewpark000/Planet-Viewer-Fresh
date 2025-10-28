@@ -1,0 +1,78 @@
+.planetsContainer {
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: rgba(22, 35, 43)
+  }
+  
+  .cardGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .planetCard {
+    background: linear-gradient(rgb(30, 9, 211), rgb(2, 255, 192));
+    border-radius: 10px;
+    padding: 16px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    transition: transform 0.2s;
+    position: relative;
+  }
+  .cardActions{
+    position: absolute;
+    margin-top: auto;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 10px;
+    left: 17px;
+  }
+  
+  
+  .planetCard h2 {
+    margin-top: 0;
+    color: #ffffff;
+  }
+  
+  .planetCard p {
+    color: #ffffff;
+  }
+  .addPlanetBtn:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: transform 0.2s;
+  }
+  .addPlanetBtn{
+    border: 2px solid rgb(2, 255, 192);
+    border-radius: 25px;
+    font-size: 25px;
+  }
+  .detailView{
+  color: rgb(0, 0, 0);
+  
+  }
+  .detailView:hover{
+    text-decoration: none;
+    color: white;
+  }
+  .cardActions{
+    display: flex;
+    align-items: center;
+  }
+  .deleteBtn{
+    background-color: rgb(231, 110, 4);
+    border: 2px solid white;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: auto;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 10px;
+    right: 10px;
+}
+.deleteBtn:hover{
+cursor: pointer;
+background-color: rgb(168, 15, 7);
+}

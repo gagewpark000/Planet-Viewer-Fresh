@@ -1,0 +1,204 @@
+.homePage {
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.homeInfo {
+    display: flex;
+    flex-direction: column;
+    border-right: 3px solid white;
+    justify-content: flex-start;
+    padding: 2rem;
+    background-color: rgba(22, 35, 43);
+    width: 33%;
+    min-height: 100vh;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    display: flex;
+    width: 30%;
+    border: 5px solid white;
+    border-radius: 20px;
+}
+
+.homeP {
+    display: flex;
+    justify-content: center;
+}
+
+.featuresList {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 5rem;
+    font-size: 1.2rem;
+}
+
+
+.linkPlanet{
+    color: aqua;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    padding-right: 30px;
+
+}
+.linkLogin{
+  color: aqua;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
+}
+
+.linkPlanet:hover, .linkLogin:hover {
+    color: blue;
+}
+
+.ourSolarSystem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.factBtn {
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: 0.3s ease;
+    width: 290px;
+  }
+  .funFacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 1rem; 
+    width: 100%;
+}
+  .factBtn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 20px rgb(0, 225, 255);
+  }
+  
+  .factDisplay {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 90%;
+    min-height: 60px;
+    line-height: 1.4;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    transition: 0.3s ease;
+  }
+  .factDisplay:empty::before {
+    content: "Click the button to reveal a fun fact!";
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+  }
+  .rightContainer {
+    flex: 1;
+    text-align: center;
+    border-left: 2px solid rgba(0, 255, 255, 0.2);
+    padding-left: 2rem;
+    animation: fadeIn 1.2s ease-in;
+    padding-top: 1rem;
+  }
+  .rightPanel {
+    flex: 1;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-left: 2px solid rgba(0, 255, 255, 0.3);
+    animation: fadeIn 1.2s ease-in;
+  }
+  .featuredPlanet {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .featuredPlanetImg{
+    border-radius: 30px;
+  }
+  @media (max-width: 480px) {
+    .homePage {
+      flex-direction: column;
+      align-items: center;
+    }
+    .featuredPlanetImg{
+      width: 75%;
+    }
+    .homeInfo,
+    .rightContainer,
+    .rightPanel {
+      width: 90%;
+      border: none;
+      padding: 1rem;
+    }
+  
+    .factBtn {
+      width: 100%;
+      max-width: 280px;
+    }
+  
+    .linkPlanet,
+    .linkLogin {
+      font-size: 2rem;
+      padding: 0 10px;
+    }
+  }
+  @media (min-width: 768px) {
+    .factBtn {
+      width: 150px;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .homePage {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .homeInfo,
+    .rightContainer,
+    .rightPanel {
+      width: 90%;
+      border: none;
+      padding: 1rem;
+    }
+  
+    .factBtn {
+      width: 100%;
+      max-width: 280px;
+    }
+  
+    .linkPlanet,
+    .linkLogin {
+      font-size: 2rem;
+      padding: 0 10px;
+    }
+  }
+  

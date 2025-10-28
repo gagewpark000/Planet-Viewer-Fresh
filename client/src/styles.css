@@ -1,0 +1,14 @@
+body {
+    background-color: rgba(22, 35, 43);
+    color: white;
+}
+html, body {
+    height: 100%;
+    
+  }
+
+.header {
+    text-align: center;
+    font-size: 2.8rem;
+}
+

@@ -1,0 +1,49 @@
+.register-form {
+  display: grid;
+  grid-template-columns: 150px 250px;
+  row-gap: 10px;
+}
+.registerPage{
+  flex-direction: column;
+display: flex;
+align-items: center;
+border: 5px solid white;
+border-radius: 30px;
+padding: 2rem;
+background-color: rgba(22, 35, 43);
+max-width: 90vw;
+max-height: 90vh;
+overflow: auto; 
+margin-bottom: 250px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+.createAccountBtn{
+border: 3px solid white;
+border-radius: 15px;
+background-color: rgb(236, 158, 12);
+}
+.createAccountBtn:hover{
+  cursor: pointer;
+  background-color: rgb(135, 69, 28);
+}
+.createAccountHeader{
+  display: flex;
+  justify-content: center;
+}
+.signInLink{
+  color: aqua;
+}
+.signInLink:hover{
+  color: white;
+}
+@media (max-width: 480px) {
+  .register-form {
+    grid-template-columns: 1fr; 
+    row-gap: 15px;
+    justify-items: center;
+  }
+}
