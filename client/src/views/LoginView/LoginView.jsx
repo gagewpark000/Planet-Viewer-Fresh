@@ -51,7 +51,11 @@ export default function LoginView() {
   return (
     <div className={styles.loginPage}>
       <div className={styles.centerContent}>
+<<<<<<< HEAD
       
+=======
+      <>
+>>>>>>> b0a9b0301d52252622a314b520944e7f62086c61
         <h1>Please Sign In</h1>
 
         <Notification notification={notification} clearNotification={() => setNotification(null)} />
@@ -82,7 +86,11 @@ export default function LoginView() {
         </form>
         <hr />
         Need an account? <Link to="/register" className={styles.register}>Register!</Link>
+<<<<<<< HEAD
     
+=======
+      </>
+>>>>>>> b0a9b0301d52252622a314b520944e7f62086c61
     </div>
     </div>
   );

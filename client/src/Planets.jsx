@@ -50,7 +50,11 @@ function Planets() {
                     <div key={planet.planetId} className={styles.planetCard}>
                         <h2>{planet.name}</h2>
                         <p>{planet.description}</p>
+<<<<<<< HEAD
                         <div className={styles.cardActions}> 
+=======
+                        <div className={styles.cardActions}>
+>>>>>>> b0a9b0301d52252622a314b520944e7f62086c61
                         <Link to={'/planet/' + planet.planetId}
                             className={styles.detailView}>
                             Edit Details</Link>
