@@ -1,0 +1,71 @@
+.loginPage{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(https://coolwallpapers.me/picsup/5618812-solar-system-wallpapers.jpg);
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.centerContent{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border: 5px solid white;
+  border-radius: 30px;
+  padding: 2rem;
+  background-color: rgba(22, 35, 43);
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto; 
+  margin-bottom: 250px;
+}
+.loginForm {
+  display: grid;
+  grid-template-columns: 150px 250px;
+  row-gap: 10px;
+  text-align: center;
+}
+input{
+  background-color: rgb(44, 41, 41);
+  color: white;
+  border: 1px solid white;
+}
+button{
+  border: 1px rgb(255, 255, 255) solid;
+  background-color: rgb(44, 41, 41);
+  color: white;
+}
+.register{
+  color: aqua;
+  padding-top: 10px;
+}
+.register:hover{
+  color: white;
+}
+.buttonContainer{
+  grid-column: 1 / -1; 
+  display: flex;
+  justify-content: center;
+}
+.signInBtn{
+  border: 2px solid aqua;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 110%;
+  text-align: center;
+  width: 50%;
+}
+.signInBtn:hover{
+  cursor: pointer;
+  background-color: rgb(4, 68, 68);
+}
+@media (max-width: 480px) {
+  .centerContent{
+  font-size: 12px;
+  }
+  }
